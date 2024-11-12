@@ -15,6 +15,7 @@
     "format_check": "prettier --check --plugin prettier-plugin-svelte ./"
   },
   "devDependencies": {
+    "@rollup/plugin-inject": "^5.0.5",
     "@sveltejs/adapter-auto": "^3.3.1",
     "@sveltejs/adapter-cloudflare": "^4.7.4",
     "@sveltejs/kit": "^2.8.0",
@@ -47,6 +48,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@jridgewell/sourcemap-codec": "^1.5.0",
     "@supabase/auth-ui-svelte": "^0.2.9",
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "^2.46.1",
