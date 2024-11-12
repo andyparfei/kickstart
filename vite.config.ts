@@ -1,6 +1,7 @@
 import { sveltekit } from "@sveltejs/kit/vite"
 import { defineConfig } from "vitest/config"
 import { buildAndCacheSearchIndex } from "./src/lib/build_index"
+import path from "path"
 
 export default defineConfig({
   plugins: [
@@ -17,6 +18,12 @@ export default defineConfig({
       },
     },
   ],
+  resolve: {
+    alias: {
+      "@src": path.resolve(__dirname, "src"),
+      "@lib": path.resolve(__dirname, "lib"),
+    },
+  },
   test: {
     include: ["src/**/*.{test,spec}.{js,ts}"],
     globals: true, /// allows to skip import of test functions like `describe`, `it`, `expect`, etc.
