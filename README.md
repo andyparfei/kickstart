@@ -17,7 +17,7 @@
 # Kickstart: A SvelteKit Boilerplate/Template
 ## a fork of CriticalMoments/CMSaasStarter
 
-- Perfect for microSaaS, indiehackers and solofounders. Nice choice as a foundation for larget scale SaaS projects as well.
+- Perfect for microSaaS, indiehackers and solofounders. Nice choice as a foundation for larger scale SaaS projects as well.
 - Opinionated. TailwindCSS + DaisyUI + Supabase + Cloudflare Pages.
 - [Feature Rich](#features): user auth, user dashboard, marketing site, blog engine, billing/subscriptions, pricing page, search, emails, and more.
 - [Lightning Performance](#performance--best-practices): fast pre-rendered pages which score 100/100 on Google PageSpeed.
