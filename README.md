@@ -30,31 +30,10 @@
 - [Fully Functional Demo](https://saasstarter.work)
 - [Quick Start](#quick-start): Full docs from `git clone` to deployment.
 
-Created by the folks at [Critical Moments](https://criticalmoments.io)! Check out our website site for an example deployment of SaaS Starter.
-
-**Make mobile apps?** Improve conversion rates and ratings with [Critical Moments](https://criticalmoments.io).
-
 ## Demo
 
-You can explore all the features using our fully functional demo [saasstarter.work](https://saasstarter.work).
+You can explore all the features using our fully functional demo [kickstart](https://kickstart-4m6.pages.dev).
 
-[![Try it Now](https://img.shields.io/badge/Try_it_Now-37a779?style=for-the-badge "Try it Now")](https://saasstarter.work)
-
-See [criticalmoments.io](https://criticalmoments.io) for an example of what’s possible after this template has design, content, and functionality added.
-
-<a href="https://saasstarter.work">
-<kbd>
-<img width="500" alt="homepage" src="https://github.com/CriticalMoments/CMSaasStarter/assets/848343/34944c09-df72-4ac2-9099-01d25d99911b">
-</kbd>
-<br>
-<kbd>
-<img width="200" alt="pricing page" src="https://github.com/CriticalMoments/CMSaasStarter/assets/848343/c3cb2ab7-3739-473e-a1fe-f82a4a31e844">
-</kbd><kbd>
-<img width="200" alt="settings page" src="https://github.com/CriticalMoments/CMSaasStarter/assets/848343/2d947c97-3cc7-4ff5-a5b1-7c8478b6f31a">
-</kbd><kbd>
-<img width="200" alt="payments portal" src="https://github.com/CriticalMoments/CMSaasStarter/assets/848343/0c4749c3-0d29-4edc-ae87-d8a4eefea3c9">
-</kbd>
-</a>
 
 ## Features
 
@@ -74,10 +53,6 @@ Everything you need to get started for a SaaS company:
 - Style toolkit: theming and UI components
 - Responsive: designed for mobile and desktop.
 - Extensible: all the tools you need to make additional marketing pages, UI components, admin portals, database backends, API endpoints, and more.
-
-## Introduction Blog Post
-
-What to learn why we picked the technologies we did, and how to keep your fork lightning fast as you add content? Check out [our blog post](https://criticalmoments.io/blog/how_we_built_our_marketing_page) on the process. Yes, it's hosted on a SaaS Starter fork!
 
 ## Tech Stack
 
@@ -107,17 +82,6 @@ What to learn why we picked the technologies we did, and how to keep your fork l
   - Cons:
     - Does not include database backups. The frugal among you could hook up pgdump backups on lambda/S3 for a few cents per month.
     - Will auto-pause your database when not in use for 7 days.
-  - Who it’s for:
-    - This tier is perfectly functional for a hobby project, or pre-revenue company (up to 50,000 monthly active users). It’s easy to scale up once revenue starts, but it’s also fine to keep at this scale indefinitely.
-- **$30/mo** - Supabase Pro, Cloudfare [Workers Paid](https://www.cloudflare.com/plans/developer-platform/)
-  - Pros:
-    - Database backups.
-    - Never pauses database.
-    - Over 1M serverless functions per day, with linear pricing for additional invocations.
-  - Cons:
-    - none
-  - Who it’s for:
-    - I suggest moving to this once you have paid customers or investors.
 
 ## Performance / Best Practices
 
@@ -131,8 +95,6 @@ The selected tech stack creates lightning fast websites.
 - Linting to find accessibility and syntax issues
 
 The result is a perfect Google PageSpeed Insights score in all categories!
-
-<img width="420" alt="Screenshot 2024-01-18 at 11 31 32 AM" src="https://github.com/CriticalMoments/CMSaasStarter/assets/848343/46b5e960-2aa0-4fb5-acd7-4f84b380e1d0">
 
 # Quick Start
 
@@ -199,7 +161,7 @@ sh ../../checks.sh
 
 If you find build, formatting or linting rules too tedious, you can disable enforcement by deleting the CI files (`.github/workflows/*`) and removing the git hook (`.git/hooks/pre-commit`).
 
-## Setup Supabase Project
+## Setup Supabase Project -- Optional
 
 - Create a Supabase account
 - Create a new Supabase project in the console
@@ -236,7 +198,7 @@ If you find build, formatting or linting rules too tedious, you can disable enfo
 - Test authentication
   - Open the `/login` page in your browser, and ensure you can sign up, confirm email, log in, and edit your account.
 
-## Setup Stripe
+## Setup Stripe -- Optional
 
 - Create a Stripe account
 - Create a product and price Tiers
@@ -272,22 +234,6 @@ When prompted: add environment variables for your production environment (PUBLIC
 PUBLIC_SUPABASE_ANON_KEY, PRIVATE_SUPABASE_SERVICE_ROLE, and PRIVATE_STRIPE_API_KEY).
 
 Optional: enable [Cloudflare Analytics](https://www.cloudflare.com/en-ca/application-services/products/analytics/) for usage metrics.
-
-### Deploy to Vercel
-
-Deploy using Vercel's deploy button:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FCriticalMoments%2FCMSaasStarter&env=PUBLIC_SUPABASE_URL,PUBLIC_SUPABASE_ANON_KEY,PRIVATE_SUPABASE_SERVICE_ROLE,PRIVATE_STRIPE_API_KEY&envDescription=Each%20environment%20variable%20is%20documented%20in%20our%20quick%20start%20guide%3A%20https%3A%2F%2Fgithub.com%2FCriticalMoments%2FCMSaasStarter%3Ftab%3Dreadme-ov-file%23quick-start&envLink=https%3A%2F%2Fgithub.com%2FCriticalMoments%2FCMSaasStarter%3Ftab%3Dreadme-ov-file%23quick-start&demo-title=SaasStarter%20Demo&demo-description=A%20live%20demo%20of%20this%20template%2C%20deployed%20from%20the%20main%20branch.&demo-url=https%3A%2F%2Fsaasstarter.work&demo-image=https%3A%2F%2Fprivate-user-images.githubusercontent.com%2F848343%2F297197975-34944c09-df72-4ac2-9099-01d25d99911b.png%3Fjwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjE0NTAwMzMsIm5iZiI6MTcyMTQ0OTczMywicGF0aCI6Ii84NDgzNDMvMjk3MTk3OTc1LTM0OTQ0YzA5LWRmNzItNGFjMi05MDk5LTAxZDI1ZDk5OTExYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcyMFQwNDI4NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zY2E4ZmY3YjVhMTc3YWE5YmI2MzI3YWE3MWQ2OWIzMjI3MGU2YzhmZDJjNjhlNDJhY2VjMDExMDk5ZjMyM2M4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.O8e9x5qFiij0TILjUncTOXjAs5Di2-8221K-N0YttbE)
-
-Here is a demo of of Saas Starter hosted on Vercel: [vercel.saasstarter.work](https://vercel.saasstarter.work)
-
-### Deploy Alternatives
-
-If you prefer another host you can explore alternatives:
-
-- [SvelteKit official adapters](https://kit.svelte.dev/docs/adapters) including Netlify, Vercel, and Node
-- [Community adapters](https://sveltesociety.dev/components#adapters) including Github pages, AppEngine, Azure, and more
-- [Supabase](https://supabase.com/docs/guides/getting-started/quickstarts/sveltekit) if you want one host for everything. Note: they do charge $10 a month for custom domains, unlike Cloudflare.
 
 ## Setup Emailer -- Optional
 
